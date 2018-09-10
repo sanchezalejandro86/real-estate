@@ -1,187 +1,160 @@
-<section class="mat-typography">
-  <mat-grid-list cols="12" rowHeight="100px" gutterSize="10px">
-    <!-- Imagen Landing -->
-    <mat-grid-tile [colspan]="12" [rowspan]="5">
-      <div class="image-container">
-        <div class="overlay">
-          <h1>Invertí en MM<sup>2</sup> fácilmente</h1>
-          <mat-chip-list>
-            <mat-chip selected color="warn">
-              <mat-icon>computer</mat-icon>100% Online
-            </mat-chip>
-            <mat-chip selected color="warn">
-              <mat-icon>schedule</mat-icon>24/7
-            </mat-chip>
-            <mat-chip selected color="warn">
-              <mat-icon>transfer_within_a_station</mat-icon>Sin intermediarios
-            </mat-chip>
-          </mat-chip-list>
-          <button mat-raised-button color="accent">Quiero Invertir</button>
+<div class="container">
+  <section>
+    <div class="image-container">
+      <div class="overlay">
+        <h1>Invertí en MM<sup>2</sup> fácilmente</h1>
+        <div>
+          <div>
+            <i class="fa fa-laptop"></i>
+            <span>100% Online</span>
+          </div>
+          <div>
+            <i class="fa fa-clock"></i>
+            <span>24/7</span>
+          </div>
+          <div>
+            <i class="fa fa-handshake"></i>
+            <span>Sin intermediarios</span>
+          </div>
+        </div>
+        <button class="btn btn-primary">Quiero Invertir</button>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="text-center">Invertir en el Mercado Inmboliario ahora es muy f&aacute;cil</h2>
+    <div class="row">
+      <div class="col-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">COMPRA</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Sencillo, Seguro, 24/7 y sin salir de casa!</h6>
+            <p class="card-text">
+              ¡Invert&iacute; HOY en mm<sup>2</sup>, sin ning&uacute;n costo legal, administrativo o burocr&aacute;trico.
+            </p>
+          </div>
         </div>
       </div>
-    </mat-grid-tile>
+      <div class="col-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">RECIBE RENTA</h5>
+            <h6 class="card-subtitle mb-2 text-muted">¡Recibe cada mes tus Rentas!</h6>
+            <p class="card-text">
+              De rentar el inmueble, la administraci&oacute;n y el mantenimiento no te preocupes, nosotros nos encargamos de todo.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">VENDE</h5>
+            <h6 class="card-subtitle mb-2 text-muted">¡Vende cuando quieras!</h6>
+            <p class="card-text">
+              Cuando tus mm<sup>2</sup> hayan ganado plusvalía y decidas que es tiempo de vender, ponlos a la venta y nosotros nos encargamos de todo lo demás.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- 3 Pasos -->
-    <mat-grid-tile [colspan]="12">
-      <h2>Invertir en el Mercado Inmboliario ahora es muy f&aacute;cil</h2>
-    </mat-grid-tile>
-    <mat-grid-tile [colspan]="4" [rowspan]="2">
-      <mat-card>
-        <mat-card-header>
-          <mat-card-title>COMPRA</mat-card-title>
-          <mat-card-subtitle>
-            Sencillo, Seguro, 24/7 y sin salir de casa!
-          </mat-card-subtitle>
-        </mat-card-header>
-        <mat-card-content>
-          <p>
-            ¡Invert&iacute; HOY en mm<sup>2</sup>, sin ning&uacute;n costo legal, administrativo o burocr&aacute;trico.
-          </p>
-        </mat-card-content>
-      </mat-card>
-    </mat-grid-tile>
-    <mat-grid-tile [colspan]="4" [rowspan]="2">
-      <mat-card>
-        <mat-card-header>
-          <mat-card-title>RECIBE RENTA</mat-card-title>
-          <mat-card-subtitle>
-            ¡Recibe cada mes tus Rentas!
-          </mat-card-subtitle>
-        </mat-card-header>
-        <mat-card-content>
-          <p>
-            De rentar el inmueble, la administraci&oacute;n y el mantenimiento no te preocupes, nosotros nos encargamos de todo.
-          </p>
-        </mat-card-content>
-      </mat-card>
-    </mat-grid-tile>
-    <mat-grid-tile [colspan]="4" [rowspan]="2">
-      <mat-card>
-        <mat-card-header>
-          <mat-card-title>VENDE</mat-card-title>
-          <mat-card-subtitle>
-            ¡Vende cuando quieras!
-          </mat-card-subtitle>
-        </mat-card-header>
-        <mat-card-content>
-          <p>
-            Cuando tus mm<sup>2</sup> hayan ganado plusvalía y decidas que es tiempo de vender, ponlos a la venta y nosotros nos encargamos de todo lo demás.
-          </p>
-        </mat-card-content>
-      </mat-card>
-    </mat-grid-tile>
+  <!-- Simulador -->
+  <section class="simulador">
+    <div class="row">
+      <div class="col-12">
+        <div class="card text-center">
+          <div class="card-body">
+            <h5 class="card-title">SIMULADOR DE INVERSION</h5>
+            <p class="card-text">Ingresa el monto que deseas invertir para simular tu inversi&oacute;n</p>
+            <form>
+              <div class="input-group mb-3">
+                <input type="number" class="form-control" placeholder="Monto a invertir" aria-label="Monto a invertir" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="button" id="button-addon2">Simular Inversi&oacute;n</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Simulador -->
-    <mat-grid-tile [colspan]="12" [rowspan]="2">
-      <mat-card class="card-simulador">
-        <mat-card-header>
-          <mat-card-title>SIMULADOR DE INVERSION</mat-card-title>
-          <mat-card-subtitle>
-            Ingresa el monto que deseas invertir para simular tu inversi&oacute;n
-          </mat-card-subtitle>
-        </mat-card-header>
-        <mat-card-content>
-          <form>
-            <mat-form-field>
-              <input type="number" matInput placeholder="Monto a invertir">
-            </mat-form-field>
-            <button mat-flat-button color="primary">Simular Inversi&oacute;n</button>
-          </form>
-        </mat-card-content>
-      </mat-card>
-    </mat-grid-tile>
+  <!-- Como funciona? -->
+  <section>
+    <h2 class="text-center">¿C&oacute;mo Funciona?</h2>
 
-    <!-- Como funciona? -->
-    <mat-grid-tile [colspan]="12">
-      <h2>¿C&oacute;mo Funciona?</h2>
-    </mat-grid-tile>
-    <mat-grid-tile [colspan]="4" [rowspan]="2">
-      <mat-card>
-        <mat-card-header>
-          <mat-card-title>Selecci&oacute;n</mat-card-title>
-        </mat-card-header>
-        <mat-card-content>
-          <p>
-            Elegimos solo las mejores propiedades que generan renta y plusvalía.
-          </p>
-        </mat-card-content>
-      </mat-card>
-    </mat-grid-tile>
-    <mat-grid-tile [colspan]="4" [rowspan]="2">
-      <mat-card>
-        <mat-card-header>
-          <mat-card-title>Fideicomiso</mat-card-title>
-        </mat-card-header>
-        <mat-card-content>
-          <p>
-            Para garantizar la correcta administración, la propiedad pasa a manos de un fideicomiso bancario.
-          </p>
-        </mat-card-content>
-      </mat-card>
-    </mat-grid-tile>
-    <mat-grid-tile [colspan]="4" [rowspan]="2">
-      <mat-card>
-        <mat-card-header>
-          <mat-card-title>MM<sup>2</sup> Digitales</mat-card-title>
-        </mat-card-header>
-        <mat-card-content>
-          <p>
-            Se emiten el TOTAL de mm<sup>2</sup> digitales en función de la superficie de la propiedad.
-          </p>
-        </mat-card-content>
-      </mat-card>
-    </mat-grid-tile>
-    <mat-grid-tile [colspan]="4" [rowspan]="2">
-      <mat-card>
-        <mat-card-header>
-          <mat-card-title>Compra</mat-card-title>
-        </mat-card-header>
-        <mat-card-content>
-          <p>
-            ¡Compra tus mm<sup>2</sup> Hoy! 100% En Línea, de forma Sencilla y Segura. Sin Intermediarios ni Costos Legales y Administrativos.
-          </p>
-        </mat-card-content>
-      </mat-card>
-    </mat-grid-tile>
-    <mat-grid-tile [colspan]="4" [rowspan]="2">
-      <mat-card>
-        <mat-card-header>
-          <mat-card-title>Renta y Administraci&oacute;n</mat-card-title>
-        </mat-card-header>
-        <mat-card-content>
-          <p>
-            MM<sup>2</sup> se encarga de todo: Rentar, Facturar, Cobrar, Mantenimiento y Administración. Para que vos recibas tus rentas cada mes.
-          </p>
-        </mat-card-content>
-      </mat-card>
-    </mat-grid-tile>
-    <mat-grid-tile [colspan]="4" [rowspan]="2">
-      <mat-card>
-        <mat-card-header>
-          <mat-card-title>Plusval&iacute;a y Venta</mat-card-title>
-        </mat-card-header>
-        <mat-card-content>
-          <p>
-            Ve crecer el valor de tus mm<sup>2</sup> y cuando lo decidas podrás ponerlos a la venta.
-          </p>
-        </mat-card-content>
-      </mat-card>
-    </mat-grid-tile>
+    <div class="row">
+      <div class="col-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Selecci&oacute;n</h5>
+            <p class="card-text">
+              Elegimos solo las mejores propiedades que generan renta y plusvalía.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Fideicomiso</h5>
+            <p class="card-text">
+              Para garantizar la correcta administración, la propiedad pasa a manos de un fideicomiso bancario.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">MM<sup>2</sup> Digitales</h5>
+            <p class="card-text">
+              Se emiten el TOTAL de mm<sup>2</sup> digitales en función de la superficie de la propiedad.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Compra</h5>
+            <p class="card-text">
+              ¡Compra tus mm<sup>2</sup> Hoy! 100% En Línea, de forma Sencilla y Segura. Sin Intermediarios ni Costos Legales y Administrativos.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Renta y Administraci&oacute;n</h5>
+            <p class="card-text">
+              MM<sup>2</sup> se encarga de todo: Rentar, Facturar, Cobrar, Mantenimiento y Administración. Para que vos recibas tus rentas cada mes.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Plusval&iacute;a y Venta</h5>
+            <p class="card-text">
+              Ve crecer el valor de tus mm<sup>2</sup> y cuando lo decidas podrás ponerlos a la venta.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <mat-grid-tile [colspan]="12" [rowspan]="1" class="stepper">
-      <mat-horizontal-stepper>
-        <mat-step [completed]="true" [editable]="false" label="¡Invert&iacute; HOY!">
-        </mat-step>
-        <mat-step [completed]="true" [editable]="false" label="Genera Plusvalía">
-        </mat-step>
-        <mat-step [completed]="true" [editable]="false" label="Viv&iacute; de tus Rentas!">
-        </mat-step>
-      </mat-horizontal-stepper>
-    </mat-grid-tile>
-
-    <mat-grid-tile [colspan]="12" [rowspan]="1" class="stepper">
-      <button mat-raised-button color="accent">Quiero Invertir</button>
-    </mat-grid-tile>
-
-  </mat-grid-list>
-</section>
+  <section>
+    <span class="badge badge-info">¡Invert&iacute; HOY!</span>-><span class="badge badge-info">Genera Plusvalía</span>-><span class="badge badge-success">Viv&iacute; de tus Rentas!</span>
+    <button class="btn btn-primary">Quiero Invertir</button>
+  </section>
+</div>
