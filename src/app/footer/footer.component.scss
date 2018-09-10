@@ -1,0 +1,22 @@
+.footer{
+  background-color: #f44336;
+  color: white;
+  h4, h2{
+    font-weight: 700;
+  }
+  .mat-grid-tile .mat-figure{
+    flex-direction: column;
+    justify-content: normal;
+    padding-top: 50px;
+  }
+
+  .logo{
+    font-weight: 700;
+    .icon-header{
+      font-size: 40px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+}
